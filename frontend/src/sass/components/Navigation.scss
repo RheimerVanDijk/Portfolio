@@ -1,0 +1,48 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    p {
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  .right {
+    .hamburger {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      .hamburger-inner {
+        background-color: #212731;
+        height: 6px;
+        width: 31px;
+
+        &:before {
+          background-color: #444c5c;
+          height: 6px;
+          width: 42px;
+        }
+
+        &:after {
+          background-color: #6d788e;
+          height: 6px;
+          width: 42px;
+        }
+      }
+    }
+
+    .is-active {
+      .hamburger-inner {
+        background-color: #212731;
+        height: 6px;
+        width: 42px;
+      }
+    }
+  }
+}
