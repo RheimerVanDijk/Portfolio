@@ -2,8 +2,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px 100px;
 
   .left {
+    display: flex;
+    align-items: center;
+
     p {
       font-size: 20px;
       color: white;

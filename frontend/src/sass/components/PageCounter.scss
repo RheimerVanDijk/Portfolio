@@ -1,0 +1,15 @@
+.pageCounter {
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    .block {
+      width: 60px;
+      height: 15px;
+      background-color: #212731;
+    }
+
+    .active {
+      background-color: #f45b69;
+    }
+  }
+}

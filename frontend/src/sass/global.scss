@@ -14,9 +14,17 @@ body {
   background-color: #101319;
 }
 
+p {
+  color: white;
+}
+
 .container {
-  padding: 25px 100px;
+  padding: 25px 100px 0px 100px;
 }
 
 @import './tools/hamburgers.css';
+
 @import './components/Navigation.scss';
+@import './components/PageCounter.scss';
+
+@import './components/items/home/hero.scss';
