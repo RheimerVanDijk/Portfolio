@@ -16,7 +16,7 @@
     img {
       width: 827px;
       height: 827px;
-      opacity: 0.75;
+      opacity: 0.6;
     }
   }
 
@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 100px;
+    // padding-left: 100px;
 
     .title {
       font-size: 70px;
@@ -81,15 +81,5 @@
         }
       }
     }
-  }
-
-  .right {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
   }
 }

@@ -3,20 +3,18 @@ import React from 'react';
 import PageCounter from '../../index/PageCounter';
 import Rheimer from '../../../assets/Me.svg';
 
+//data-aos="fade-up" data-aos-delay="500" data-aos-duration="500"
 function HomeHero() {
-  const helloMessages = ['Hi there!', 'Hello!', 'Heyyyy!', 'Helloooww!'];
-  const msg = helloMessages[Math.floor(Math.random() * helloMessages.length)];
-
-  let randomHelloMessage = <p>{msg}</p>;
-
   return (
     <div className="homeHero">
       <div className="backgroundImage">
         <img src={Rheimer} alt="" />
       </div>
-      <div className="left">
+      <div className="left" data-aos="fade-right" data-aos-delay="300">
         <div className="inner">
-          <div className="title">{randomHelloMessage}</div>
+          <div className="title">
+            <p>Hello!</p>
+          </div>
           <div className="text">
             <p>
               I’m Rheimer, a <span className="colored">developer</span> and <br /> trying to be a{' '}
@@ -32,9 +30,7 @@ function HomeHero() {
           </div>
         </div>
       </div>
-      <div className="right">
-        <PageCounter numbers="2" />
-      </div>
+      <div className="right"></div>
     </div>
   );
 }

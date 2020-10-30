@@ -5,9 +5,9 @@ import HomeHero from '../components/pageItems/home/hero';
 import AboutMe from '../components/pageItems/home/aboutMe';
 import PageCounter from '../components/index/PageCounter';
 
-function HomePage() {
+function SkillsPage() {
   return (
-    <div className="container" id="homePage">
+    <div className="container" id="SkillsPage">
       <HomeHero />
       <AboutMe />
       <PageCounter numbers="2" />
@@ -15,4 +15,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default SkillsPage;

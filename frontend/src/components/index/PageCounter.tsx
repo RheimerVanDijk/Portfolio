@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import ScrollToPage from '../tools/scroller';
 
 function PageCounter(props: any) {
+  const [count, setCount] = useState(1);
   const numbers = props.numbers;
 
   let currentNum = 1;
@@ -13,6 +15,8 @@ function PageCounter(props: any) {
 
     if (!document.querySelectorAll('.block')[id].classList.contains('active')) {
       document.querySelectorAll('.block')[id].classList.add('active');
+      setCount(id + 1);
+      ScrollToPage(id);
     }
   }
 
@@ -27,9 +31,9 @@ function PageCounter(props: any) {
   }
 
   return (
-    <div className="pageCounter">
+    <div className="pageCounter" data-aos="fade-left" data-aos-delay="300">
       <div className="number">
-        <p>{currentNum}</p>
+        <p>{count}</p>
       </div>
       <div className="blocks">{blocks}</div>
     </div>

@@ -1,15 +1,36 @@
 .pageCounter {
+  position: fixed;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+
   .blocks {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
     .block {
       width: 60px;
       height: 15px;
       background-color: #212731;
+      margin-bottom: 10px;
+    }
+
+    .block:last-child {
+      margin-bottom: 0px;
     }
 
     .active {
       background-color: #f45b69;
     }
+  }
+
+  .number {
+    font-size: 100px;
+    margin-top: -20px;
+    margin-right: 15px;
   }
 }
